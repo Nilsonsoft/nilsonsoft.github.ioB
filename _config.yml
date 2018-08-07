@@ -13,19 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Nilsonlinux
+title: Nilsonsoft
 description: > # this means to ignore newlines until "baseurl:"
   
 baseurl: 
-url: "https://nilsonlinux.github.io/"
+url: "https://nilsonsoft.github.io/"
 permalink: /:year/:month/:day/:title
-repository: Nilsonlinux/nilsonlinux
+repository: Nilsonsoft/Nilsonlinux
 paginate: 5
 
 # MatJek specific configurations
 # cynp specific configurations - 171124
-github_profile: "https://github.com/nilsonlinux"
-user: "Nilsonlinux"
+github_profile: "https://github.com/Nilsonsoft"
+user: "Nilsonsoft"
 user_email: "nilsonlinux@gmail.com"
 contact_url: "https://goo.gl/Tp9FCa"
 google_tracking_id: "UA-122784671-1"

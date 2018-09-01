@@ -3,28 +3,48 @@ layout: page
 title: "Contatos"
 ---
 
-  <div class="card-reveal">
-    <form class="col s12" action="https://formspree.io//{{site.user_email}}" method="POST">
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input class="validate" id="icon_prefix" type="text" name="name" required> 
-          <label for="icon_prefix">Nome</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input class="validate" id="email" type="email" name="_replyto" required>
-          <label for="email" data-error="Please enter a valid Email Address" data-success="Verificado!">Email</label>
-        </div>
-      </div>
-      <div class="row">
-       <div class="input-field col s12">
-         <i class="material-icons prefix">message</i>
-         <textarea id="icon_prefix2" class="materialize-textarea" name="message" required></textarea>
-         <label for="icon_prefix2">Mensagem</label>
-       </div>
-     </div>
-      <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
-         <i class="material-icons right">send</i>
-       </button>
-    </form>
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbzO2JBqXFqIX8qQc37BkZvL4Ijsz2NdwhQTESyc/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="What your Mom calls you" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+        <span class="email-invalid" style="display:none">
+          Must be a valid email address</span>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="color">Favourite Color: </label>
+        <input id="color" name="color" placeholder="green" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+<!-- END -->

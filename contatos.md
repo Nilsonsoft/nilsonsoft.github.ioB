@@ -51,5 +51,5 @@ title: "Contato"
 
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript"
-  src="{{site.baseurl}}/assets/js/form-submission-handler.js"></script>
+  src="/assets/js/form-submission-handler.js"></script>
 <!-- END -->
